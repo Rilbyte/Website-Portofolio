@@ -1,11 +1,11 @@
 // import flow from './flow.svg';
 import './App.css';
-import {NavBar} from './My_Component/NavBar'; 
-import {Banner} from './My_Component/Banner'; 
-import {Skills} from './My_Component/Skills';
-import {Hard_skills} from './My_Component/Hard_skills';
-import {Projects} from './My_Component/Projects';
-import { Contact } from "./My_Component/Contact";
+import {NavBar} from './components/NavBar'; 
+import {Banner} from './components/Banner'; 
+import {Skills} from './components/Skills';
+import {Hard_skills} from './components/Hardskills';
+import {Projects} from './components/Projects';
+import { Contact } from "./components/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
