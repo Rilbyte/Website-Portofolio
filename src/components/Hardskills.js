@@ -4,7 +4,6 @@ import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
 
 export const Hard_skills = () => {
     const responsive = {
@@ -41,27 +40,27 @@ export const Hard_skills = () => {
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
-                                <img src={meter1} alt='Image'></img>
+                                <img src={meter1} alt='cplusplus'></img>
                                 <h5>C++</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt='Image'></img>
+                                <img src={meter2} alt='csharp'></img>
                                 <h5>C#</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt='Image'></img>
+                                <img src={meter3} alt='sql'></img>
                                 <h5>SQL</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt='Image'></img>
+                                <img src={meter1} alt='html'></img>
                                 <h5>HTML/CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt='Image'></img>
+                                <img src={meter3} alt='Javascript'></img>
                                 <h5>JAVASCRIPT</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt='Image'></img>
+                                <img src={meter2} alt='react'></img>
                                 <h5>REACT</h5>
                             </div>
                         </Carousel>
