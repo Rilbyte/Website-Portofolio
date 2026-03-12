@@ -9,7 +9,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const [index, setIndex] = useState(1);
+    const [, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "Video Editor", "UI/UX Designer" ];
     const period = 2000;
   
@@ -19,7 +19,7 @@ export const Banner = () => {
       }, delta);
   
       return () => { clearInterval(ticker) };
-    }, [text])
+    }, [text, delta]);
   
     const tick = () => {
       let i = loopNum % toRotate.length;
@@ -51,14 +51,14 @@ export const Banner = () => {
         <Container>
           <Row className="aligh-items-center">
             <Col xs={12} md={6} xl={7}>
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Welcome to my Portofolio</span>
                   <h1>{`Hi! I'm Ariel Pratama`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "VIDEO EDITOR", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                     <p>INNOVATIVE, TASK-DRIVEN STUDENT WITH EXPERIENCE OF WEB DESIGN/DEVELOPMENT & VIDEO EDITING/VFX.</p>
                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               {/* <TrackVisibility>
                 {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Welcome to my Portofolio</span>
                   <h1>{`Hi! I'm Ariel Pratama`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                     <p>INNOVATIVE, TASK-DRIVEN STUDENT WITH EXPERIENCE OF WEB DESIGN AND DEVELOPMENT. PRODUCTIVE IN DEVELOPING DATABASE, USER INTERFACES.IMPLEMENTING NEW FEATURES BASED ON USERFEEDBACK.</p>
                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
