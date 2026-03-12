@@ -1,6 +1,6 @@
 // import flow from './flow.svg';
 import './App.css';
-import {NavBar} from './components/NavBar'; 
+import {NavBar} from './components/Navbar'; 
 import {Banner} from './components/Banner'; 
 import {Skills} from './components/Skills';
 import {Hard_skills} from './components/Hardskills';
