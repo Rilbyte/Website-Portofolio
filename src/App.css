@@ -631,38 +631,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   nav.navbar .navbar-brand{
-    width: 25%;
-  }
-
-  nav.navbar .navbar-collapse{
-    background: #121212;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
+    width: 18%;
   }
 
   nav.navbar .navbar-nav{
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   nav.navbar .navbar-nav .nav-link.navbar-link{
-    padding: 12px 0;
-    font-size: 16px;
-  }
-
-  span.navbar-text{
-    flex-direction: column;
-    margin-top: 20px;
+    padding: 0 12px;
+    font-size: 14px;
   }
 
   .social-icon{
-    margin-bottom: 15px;
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .social-icon a{
+    width: 32px;
+    height: 32px;
   }
 
   .navbar-text button{
-    margin-left: 0;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+}
+@media (max-width:768px){
+
+  nav.navbar .navbar-nav{
+    gap: 10px;
+  }
+
+  span.navbar-text{
+    gap: 8px;
   }
 
 }
