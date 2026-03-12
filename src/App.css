@@ -623,3 +623,94 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/************ Mobile Responsive ************/
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav.navbar a.navbar-brand {
+    width: 20%;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .navbar-text {
+    margin-top: 15px;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 150px 0 60px 0;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .banner p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .banner button {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .banner img {
+    margin-top: 40px;
+    width: 80%;
+  }
+
+  /* Skills */
+  .skill h2 {
+    font-size: 32px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .skill-slider {
+    width: 100%;
+  }
+
+  .skill-bx {
+    padding: 40px 20px;
+  }
+
+  /* Projects */
+  .project h2 {
+    font-size: 32px;
+  }
+
+  .project p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+
+  /* Contact */
+  .contact h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .contact img {
+    margin-bottom: 40px;
+  }
+
+  /* Footer */
+  .footer img {
+    width: 40%;
+  }
+
+}
